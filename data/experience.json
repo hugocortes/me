@@ -1,0 +1,20 @@
+[
+    {
+        "role":"Software Engineer",
+        "company":"myDevices",
+        "summary":"Refactored the authentication and authorization microservices to help bring in oAuth2 protocol and third party integrations. Primarily worked on Javascript API microservices using Nodejs. Built a complete end to end testing suite in order to quickly find the service causing issues in the archietcture.",
+        "range":"March 2017 - Present"
+    },
+    {
+        "role":"RF Test Engineer",
+        "company":"National Technical Systems",
+        "summary":"Managed compliance testing projects for Zigbee Home Automation, Zigbee Smart Energy, and Qi Wireless devices. Used Java programming to automate several Zigbee specification tests for both Home Automation and Smart Energy profiles.",
+        "range":"April 2016 - March 2017"
+    },
+    {
+        "role":"Associate Engineer",
+        "company":"Creative Aero Engineering Solutions",
+        "summary":"Helped maintain and customize 3D printers used to prototype aerospace parts",
+        "range":"February 2015 - March 2016"
+    }
+]

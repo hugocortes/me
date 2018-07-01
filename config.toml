@@ -1,0 +1,31 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Hugo Cortes"
+theme = "resume"
+
+[params]
+    firstName = "Hugo"
+    lastName = "Cortes"
+    address = "Los Angeles, CA"
+    phone = ""
+    contactNote = "Software Engineer"
+    profileImage = "img/me.jpeg"
+    email = "contact@hugocortes.me"
+    description = "Cortes, Hugo Resume"
+    favicon = "img/favicon.ico"
+    showSkills = true
+    showProjects = true
+    showOpenSource = true
+    showPublications = false
+    showExperience = true
+    showEducation = true
+    showQr = false
+    gitCommitPrefix = "https://github.com/hugocortes/me"
+
+[[params.handles]]
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/in/cortes-hugo/"
+
+[[params.handles]]
+    name = "GitHub"
+    link = "https://github.com/hugocortes"
