@@ -28,4 +28,4 @@ COPY . /src/resume
 
 # serve site
 WORKDIR /src/resume
-CMD hugo server --bind=0.0.0.0
+CMD hugo server --baseURL="https://resume.hugocortes.me" --appendPort=false --bind=0.0.0.0
