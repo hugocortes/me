@@ -7,9 +7,11 @@ RUN apk add --no-cache \
     rsync
 
 ENV VERSION 0.42
+ENV ARCH linux-64bit
+
 RUN mkdir -p /usr/local/src \
     && cd /usr/local/src \
-    && curl -L https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_${VERSION}_linux-64bit.tar.gz | tar -xz \
+    && curl -L https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_${VERSION}_${ARCH}.tar.gz | tar -xz \
     && mv hugo /usr/local/bin/hugo \
     && addgroup -Sg 1000 hugo \
     && adduser -SG hugo -u 1000 -h /src hugo
@@ -22,7 +24,10 @@ RUN git init
 RUN git submodule add https://github.com/hugocortes/hugo-resume.git /src/resume/themes/resume
 
 # automatically build site
-COPY . /src/resume
+COPY content/ /src/resume/content
+COPY data/ /src/resume/data
+COPY static /src/resume/static
+COPY config.toml /src/resume
 
 # serve site
 WORKDIR /src/resume
