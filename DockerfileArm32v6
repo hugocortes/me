@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM arm32v6/alpine
 
-ENV VERSION 0.42
-ENV ARCH linux-64bit
+ENV VERSION 0.47
+ENV ARCH Linux-ARM
 
 ENV BASE_URL=$baseURL
 ENV APPEND_PORT=$appendPort
