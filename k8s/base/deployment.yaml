@@ -4,21 +4,21 @@ metadata:
   name: me
   labels:
     app: me
-    role: static
+    role: frontend
     env: local
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: me
-      role: static
+      role: frontend
       env: local
   template:
     metadata:
       name: me
       labels:
         app: me
-        role: static
+        role: frontend
         env: local
     spec:
       containers:

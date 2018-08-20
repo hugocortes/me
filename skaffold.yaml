@@ -10,4 +10,4 @@ build:
     skipPush: null
 deploy:
   kustomize:
-    kustomizePath: k8s/base/
+    kustomizePath: k8s/local/
