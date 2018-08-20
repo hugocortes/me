@@ -34,6 +34,4 @@ COPY config.toml /src/me
 # serve site
 WORKDIR /src/me
 
-EXPOSE 1313
-
-CMD hugo server --baseURL=$BASE_URL --appendPort=$APPEND_PORT --port=$PORT --bind=0.0.0.0
+CMD hugo server --disableLiveReload --baseURL=$BASE_URL --appendPort=$APPEND_PORT --port=$PORT --bind=0.0.0.0
