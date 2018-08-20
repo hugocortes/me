@@ -15,5 +15,5 @@ spec:
   ports:
   - name: http
     protocol: TCP
-    port: 31100
+    port: 1313
     nodePort: 31100

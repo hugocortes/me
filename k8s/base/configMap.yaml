@@ -7,6 +7,6 @@ metadata:
     role: static
     env: local
 data:
-  BASE_URL: 'http://192.168.99.100'
-  APPEND_PORT: 'true'
-  PORT: '31100'
+  BASE_URL: 'http://192.168.99.100:31100'
+  APPEND_PORT: 'false'
+  PORT: '1313'
