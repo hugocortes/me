@@ -3,8 +3,13 @@ FROM alpine:latest
 ENV VERSION 0.42
 ENV ARCH linux-64bit
 
+ARG baseURL=http://localhost
+ARG port=1313
+ARG appendPort=true
+
 ENV BASE_URL=$baseURL
 ENV APPEND_PORT=$appendPort
+ENV PORT=$port
 
 RUN apk add --no-cache curl git rsync
 
@@ -31,4 +36,4 @@ WORKDIR /src/me
 
 EXPOSE 1313
 
-CMD hugo server --baseURL=$BASE_URL --appendPort=$APPEND_PORT --bind=0.0.0.0
+CMD hugo server --baseURL=$BASE_URL --appendPort=$APPEND_PORT --port=$PORT --bind=0.0.0.0
