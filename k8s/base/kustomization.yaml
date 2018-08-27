@@ -1,5 +1,0 @@
-commonLabels:
-  app: me
-resources:
-  - deployment.yaml
-  - configMap.yaml
