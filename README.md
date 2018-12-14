@@ -2,13 +2,29 @@
 
 simple static portfolio site using [Hugo Framework](https://gohugo.io/)
 
-# Running
+## Local
 
-This site is best ran as a docker container and the image can be found in my [docker hub](https://hub.docker.com/r/hugocortes/)
+Use the [hugo server](https://gohugo.io/commands/hugo_server/) to run this locally
 
-Step to use public image (use latest for x86 and arm32v6 for RPi):
-1. `docker run -d -e BASE_URL=http://localhost -e APPEND_PORT=true --name me -p 1313:1313 hugocortes/me:latest`
+```sh
+# when cloning, get submodule
+git clone --recurse-submodules git clone git@github.com:hugocortes/me.git
 
-Steps to build locally:
-1. `docker build -t <IMAGE_NAME> .`
-2. `docker run -d --name me -p 1313:1313 <IMAGE_NAME>`
+# or
+git submodule init
+git submodule update
+
+# now run (defaults to port 1313)
+hugo server --bind=0.0.0.0
+```
+
+## Deployment
+
+When doing a deploy, a docker image is used to serve the site using [nginx](https://hub.docker.com/_/nginx/).
+
+`docker run -d --name me -p 80:80 hugocortes/me`
+
+By default this site's baseUrl is bound to `https://resume.hugocortes.me`, if you would like to point it to a different baseUrl, you will have to use provide `baseURL` as a build arg when building docker image:
+
+`docker build --build-arg baseURL=http://localhost:1313 -t hugocortes/me:latest .`
+* This will fetch static resources from `http://localhost:1313` after the image is ran
