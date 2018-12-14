@@ -1,0 +1,11 @@
+language: minimal
+
+services:
+  - docker
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./deploy.sh
+  on:
+    branch: master
