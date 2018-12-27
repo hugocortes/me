@@ -1,6 +1,6 @@
 FROM alpine:latest AS builder
 
-ENV VERSION 0.42
+ENV VERSION 0.53
 ENV ARCH linux-64bit
 
 ARG baseURL=https://resume.hugocortes.me
