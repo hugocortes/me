@@ -8,7 +8,7 @@ Use the [hugo server](https://gohugo.io/commands/hugo_server/) to run this local
 
 ```sh
 # when cloning, get submodule
-git clone --recurse-submodules git clone git@github.com:hugocortes/me.git
+git clone --recurse-submodules git@github.com:hugocortes/me.git
 
 # or
 git submodule init

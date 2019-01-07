@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Hugo Cortes"
 theme = "resume"
 
+[taxonomies]
+    tag = "tags"
+
 [params]
     firstName = "Hugo"
     lastName = "Cortes"
@@ -20,7 +23,7 @@ theme = "resume"
     showExperience = true
     showEducation = true
     showQr = false
-    gitCommitPrefix = "https://github.com/hugocortes/me"
+    gitCommitPrefix = "https://github.com/hugocortes/me/commit/"
 
 [[params.handles]]
     name = "LinkedIn"
@@ -29,3 +32,6 @@ theme = "resume"
 [[params.handles]]
     name = "GitHub"
     link = "https://github.com/hugocortes"
+
+[outputs]
+  home = ["HTML", "JSON"]
