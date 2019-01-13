@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOCKER_HUB=hugocortes/me
-DATE=$(date +"%Y%m%d")
+DATE=$(date +"%Y%m%d-%H%M")
 
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
