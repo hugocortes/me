@@ -35,3 +35,6 @@ theme = "resume"
 
 [outputs]
   home = ["HTML", "JSON"]
+
+[params.google.analytics]
+    trackerID = "UA-132358064-1"
