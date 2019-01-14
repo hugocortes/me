@@ -15,20 +15,22 @@ RUN addgroup -Sg 1000 hugo
 RUN mkdir -p /var/www/me
 RUN adduser -SG hugo -u 1000 -h /var/www/me hugo
 
-# add theme
-RUN mkdir -p /var/www/me/themes
-RUN git init
-RUN git submodule add https://github.com/hugocortes/hugo-resume.git /var/www/me/themes/resume
-
-# automatically build site
-COPY content/ /var/www/me/content
-COPY data/ /var/www/me/data
-COPY static /var/www/me/static
-COPY config.toml /var/www/me
-
-# serve site
 WORKDIR /var/www/me
 
+# copy required contents
+COPY content/ content
+COPY data/ data
+COPY static/ static
+COPY config.toml .
+
+# init submodule
+COPY .gitmodules .
+COPY .git/ .git
+COPY themes/ themes
+RUN git submodule init
+RUN git submodule update
+
+# build site
 RUN hugo --baseURL=$BASE_URL
 
 FROM nginx
