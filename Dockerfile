@@ -33,5 +33,5 @@ RUN git submodule update
 # build site
 RUN hugo --baseURL=$BASE_URL
 
-FROM nginx
+FROM nginx:alpine
 COPY --from=builder /var/www/me/public /usr/share/nginx/html
