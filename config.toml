@@ -2,6 +2,7 @@ baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "Hugo Cortes"
 theme = "resume"
+enableGitInfo = true
 
 [taxonomies]
     tag = "tags"
@@ -16,14 +17,16 @@ theme = "resume"
     email = "contact@hugocortes.me"
     description = "Cortes, Hugo Resume"
     favicon = "favicon.ico"
+
     showSkills = true
     showProjects = true
     showOpenSource = true
     showPublications = false
     showExperience = true
     showEducation = true
-    showQr = false
-    gitCommitPrefix = "https://github.com/hugocortes/me/commit/"
+    showQr = true
+
+    gitCommitPrefix = "https://github.com/hugocortes/me/commit/master"
 
 [[params.handles]]
     name = "LinkedIn"

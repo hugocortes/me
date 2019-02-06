@@ -1,6 +1,5 @@
 ---
-title: "Home"
-date: 2018-06-10T18:56:13-05:00
+title: "Hugo Cortes"
 sitemap:
   priority : 1.0
 
