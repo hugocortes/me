@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Hugo Cortes"
 theme = "resume"
 enableGitInfo = true
+disqusShortname = "hugocortes"
 
 [taxonomies]
     tag = "tags"
@@ -24,6 +25,7 @@ enableGitInfo = true
     showPublications = false
     showExperience = true
     showEducation = true
+    showBlog = true
     showQr = true
 
     gitCommitPrefix = "https://github.com/hugocortes/me/commit/master"
