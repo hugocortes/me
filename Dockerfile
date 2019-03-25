@@ -3,7 +3,7 @@ FROM alpine:latest AS builder
 ENV VERSION 0.53
 ENV ARCH linux-64bit
 
-ARG baseURL=https://hugocortes.me
+ARG baseURL=https://hugocortes.dev
 ENV BASE_URL=$baseURL
 
 RUN apk add --no-cache curl git rsync
