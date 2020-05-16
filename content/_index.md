@@ -1,5 +1,5 @@
 ---
-title: "Hugo Cortes"
+title: "Home"
 sitemap:
   priority : 1.0
 
@@ -8,5 +8,4 @@ outputs:
 - rss
 - json
 ---
-<p>Hi, I'm a Software Engineer and while I have experience in full-stack development, my expertise is in building backend services following a microservice architecture.</p>
-<p>Along with this, I have experience in containerization by deploying microservices in containers and using orchestration tools such as Kubernetes and Docker Swarm.</p>
+I'm a Software Engineer with experience in programming in variety of languages and levering DevOps and CI/CD to manage platforms both on prem and in public cloud.

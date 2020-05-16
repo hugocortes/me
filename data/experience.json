@@ -2,19 +2,19 @@
     {
         "role":"Software Engineer",
         "company":"myDevices",
-        "summary":"Refactored the authentication and authorization microservices to help bring in oAuth2 protocol and third party integrations. Primarily worked on Javascript API microservices using Nodejs. Built a complete end to end testing suite in order to quickly find the service causing issues in the archietcture.",
+        "summary":"* Using Golang, re-designed an ingestion microservice which is responsible for receiving all connected IoT sensor data or events emitted by internal microservices. The redesign achieved the goals of being scalable, stable, and highly flexible by having interchangeable components.\n* Using a combination of NodeJS and Java, lead the migration to Keycloak (identity management service) which is used for authentication and authorization by the majority of the microservices in order to achieve software multi tenancy that is used to for a B2B software as a service product.\n* Implemented the CICD pipeline for Kubernetes which involves TravisCI enforcing best practices by linting code and checking test code coverage, creating a generic Helm chart to be used by all microservices, and using Spinnaker for continuous deployment to all Kubernetes clusters.\n* Lead the implementation of all NodeJS and Golang microservice test suites which allows TravisCI to provide feedback on any possible breaking changes detected by test suites.",
         "range":"March 2017 - Present"
     },
     {
         "role":"RF Test Engineer",
         "company":"National Technical Systems",
-        "summary":"Managed compliance testing projects for Zigbee Home Automation, Zigbee Smart Energy, and Qi Wireless devices. Used Java programming to automate several Zigbee specification tests for both Home Automation and Smart Energy profiles.",
+        "summary":"* Used Java programming to write scripts that are used to test and certify IEEE 802.15.4 (ZigBee) clusters for Smart Energy and Home Automation profiles.\n* Used wireless packet sniffers to view ZigBee packets and an in-house tool to send ZigBee commands to devices under test\n* Project lead for WiFi interoperability testing and wireless charging certification (Wireless Power Consortium)\n* Used lab equipment such as oscilloscopes and logic analyzers for testing and certifying products.",
         "range":"April 2016 - March 2017"
     },
     {
         "role":"Associate Engineer",
         "company":"Creative Aero Engineering Solutions",
-        "summary":"Helped maintain and customize 3D printers used to prototype aerospace parts",
+        "summary":"* Used Python programming to create scripts in order to improve time efficiency of repetitive tasks.\n* Tested discrete hardware components to find any potential defects before assembling 3D printers.\n* Assembled 3D printers from discrete components and verified compatibility with software.\n* Used C programming to improve 3D printer firmware and C# programming to update software used for 3D print control.",
         "range":"February 2015 - March 2016"
     }
 ]

@@ -1,33 +1,28 @@
+enableGitInfo = false
 languageCode = "en-us"
-title = "Hugo Cortes"
+PygmentsCodeFences = true
+PygmentsCodeFencesGuessSyntax = true
+PygmentsStyle = "monokai"
 theme = "resume"
-enableGitInfo = true
-disqusShortname = "hugocortes"
-
-[taxonomies]
-    tag = "tags"
+title = "Hugo Cortes"
 
 [params]
+    address = "Los Angeles, CA"
+    contactNote = "Software Engineer"
+    email = "contact@hugocortes.dev"
+    favicon = "favicon.ico"
     firstName = "Hugo"
     lastName = "Cortes"
-    address = "Los Angeles, CA"
     phone = ""
-    contactNote = "Software Engineer"
-    profileImage = "https://res.cloudinary.com/hugocortes/image/upload/c_scale,h_200/v1546856759/me.png"
-    email = "contact@hugocortes.dev"
-    description = "Cortes, Hugo Resume"
-    favicon = "favicon.ico"
-
-    showSkills = true
-    showProjects = true
-    showOpenSource = true
-    showPublications = false
-    showExperience = true
-    showEducation = true
+    profileImage = "https://res.cloudinary.com/hugocortes/image/upload/v1589467648/hugo.jpg"
     showBlog = true
+    showEducation = true
+    showExperience = true
+    showOpenSource = true
+    showProjects = false
+    showPublications = false
     showQr = true
-
-    gitCommitPrefix = "https://github.com/hugocortes/me/commit/master"
+    showSkills = true
 
 [[params.handles]]
     name = "LinkedIn"
@@ -40,5 +35,5 @@ disqusShortname = "hugocortes"
 [outputs]
   home = ["HTML", "JSON"]
 
-[params.google.analytics]
-    trackerID = "UA-132358064-1"
+[taxonomies]
+    tag = "tags"

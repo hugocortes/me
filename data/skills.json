@@ -1,23 +1,41 @@
 [
   {
-      "grouping":"Architecture",
-      "skills":[ "Load Balancing","Microservices","RESTful APIs", "Authentication & Authorization"]
-  },{
-      "grouping":"Languages, Operating Systems & Tools",
-      "skills":[ "javascript","go","java","angular","nodejs","git","linux"]
-  },
-  {
-      "grouping":"Platform Development & Administration",
-      "skills":[ "Atlassian","HAProxy","MongoDB","MySQL"]
+    "grouping":"Architecture",
+    "skills":[
+      "Authentication & Authorization",
+      "Microservices",
+      "RESTful APIs", 
+      "SaaS/PaaS"
+    ]
   },
   {
     "grouping":"Containers & Cloud",
       "skills":[
-        {"name":"Docker","link":"https://docker.com"},
-        {"name":"AWS","link":"https://aws.amazon.com"},
-        {"name":"Google Cloud","link":"https://cloud.google.com"},
-        {"name": "Docker Swarm", "link": "https://docs.docker.com/engine/swarm/"},
-        {"name": "Kubernetes", "link": "https://kubernetes.io/"}
+        { "name":"AWS", "link": "https://aws.amazon.com" },
+        { "name":"Docker", "link": "https://docker.com" },
+        { "name":"Google Cloud", "link": "https://cloud.google.com" },
+        { "name": "Kubernetes", "link": "https://kubernetes.io/" }
       ]
+  },
+  {
+    "grouping":"Languages, Operating Systems & Tools",
+    "skills": [
+      "angular",
+      "git",
+      "go",
+      "java",
+      "javascript",
+      "linux",
+      "nodejs"
+    ]
+  },
+  {
+    "grouping":"Platform Development & Administration",
+    "skills":[
+      "Atlassian",
+      "MongoDB",
+      "MySQL",
+      "PostgresQL"
+    ]
   }
 ]
